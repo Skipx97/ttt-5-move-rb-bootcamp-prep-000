@@ -7,14 +7,11 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
-def input_to_index(input)
-  index = input.to_i - 1
-  index
+
+def input_to_index(i)
+  return (i.to_i - 1)
 end
 
-board_array=[" "," "," "," "," "," "," "," "," "]
-def move(array, position, xoro = "X")
-  index = input_to_index(position)
-  array[index + 1] = xoro
-  display_board(array)
+def move(board, ind, arg = 'X')
+  board[ind] = arg
 end
